@@ -2,3 +2,7 @@ version: '3.9'
 services:
   app:
     build: './'
+    volumes:
+      - 'db:/home/node/db'
+volumes:
+  db:
